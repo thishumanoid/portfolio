@@ -17,10 +17,8 @@ export const DATA = {
   url: 'https://github.com/thishumanoid',
   location: 'Noida, India',
   locationLink: 'https://www.google.com/maps/place/noida',
-  description:
-    'Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.',
-  summary:
-    'At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).',
+  description: 'I build software that users love',
+  summary: `I'm a web developer & UI/UX designer with 3+ yrs of experience building software, from simple tools to advanced web apps. Currently growing [KeyCorrect](https://chromewebstore.google.com/detail/autocorrect-misspelled-wo/ppmhjnpgbdlpeoeboaldplmffgkijjji), a Chrome extension with 5000+ users.`,
   avatarUrl: `${basePath}/me.png`,
   skills: [
     { name: 'React', icon: ReactLight },
@@ -34,8 +32,8 @@ export const DATA = {
     { name: 'UI/UX', icon: UiUx },
   ],
   navbar: [
-    { href: '/', icon: HomeIcon, label: 'Home' },
-    { href: '/blog', icon: NotebookIcon, label: 'Blog' },
+    // { href: '/portfolio', icon: HomeIcon, label: 'Home' },
+    // { href: '/blog', icon: NotebookIcon, label: 'Blog' },
   ],
   contact: {
     email: 'neuhiman@gmail.com',
@@ -80,7 +78,7 @@ export const DATA = {
 
   work: [
     {
-      company: 'KeyCorrect.com',
+      company: 'KeyCorrect',
       href: 'https://keycorrect.com',
       badges: [],
       location: 'Remote',
@@ -89,7 +87,19 @@ export const DATA = {
       start: 'June 2023',
       end: 'Now',
       description:
-        "It's a browser extension that autocorrects your typos and makes your typing faster. It has 5000+ and good rating on chrome web store, basically users are loving it",
+        "It's a browser extension that autocorrects your typos and makes your typing faster. It has 5000+ and i built it using Typescript, React.js, TailwindCSS, Levenshtein distance algorithm",
+    },
+    {
+      company: 'LeadLooking',
+      href: 'https://leadlooking.com',
+      badges: [],
+      location: 'Remote',
+      title: 'Web Developer',
+      logoUrl: `${basePath}/leadlooking.png`,
+      start: 'May 2024',
+      end: 'Jan 2025',
+      description:
+        "An AI agent that finds high-intent leads from Reddit on autopilot. I also automated the entire blog generation process, visit the /blog page to see AI-generated, SEO-ready posts.",
     },
     {
       company: 'FolderXD',
@@ -98,93 +108,27 @@ export const DATA = {
       location: 'Remote',
       title: 'Web Developer',
       logoUrl: `${basePath}/folderxd.png`,
-      start: 'January 2024',
-      end: 'April 2026',
+      start: 'Jan 2024',
+      end: 'Jun 2026',
       description:
-        "It's a chrome extension built with typescript and react and it adds folder organization interface on google workspace apps like google docs, sheets, slides, etc... so that you can organize your docs in much better way",
+        "It's a browser extension that adds folder interface on google workspace apps like Google Docs, Sheets, Slides, etc... so that you can organize your docs in a better way",
     },
-    // {
-    //   company: "Nvidia",
-    //   href: "https://nvidia.com/",
-    //   badges: [],
-    //   location: "Santa Clara, CA",
-    //   title: "Software Engineer",
-    //   logoUrl: "/nvidia.png",
-    //   start: "January 2020",
-    //   end: "April 2020",
-    //   description:
-    //     "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
-    // },
-    // {
-    //   company: "Splunk",
-    //   href: "https://splunk.com",
-    //   badges: [],
-    //   location: "San Jose, CA",
-    //   title: "Software Engineer",
-    //   logoUrl: "/splunk.svg",
-    //   start: "January 2019",
-    //   end: "April 2019",
-    //   description:
-    //     "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
-    // },
-    // {
-    //   company: "Lime",
-    //   href: "https://li.me/",
-    //   badges: [],
-    //   location: "San Francisco, CA",
-    //   title: "Software Engineer",
-    //   logoUrl: "/lime.svg",
-    //   start: "January 2018",
-    //   end: "April 2018",
-    //   description:
-    //     "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
-    // },
-    // {
-    //   company: "Mitre Media",
-    //   href: "https://mitremedia.com/",
-    //   badges: [],
-    //   location: "Toronto, ON",
-    //   title: "Software Engineer",
-    //   logoUrl: "/mitremedia.png",
-    //   start: "May 2017",
-    //   end: "August 2017",
-    //   description:
-    //     "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
-    // },
+    {
+      company: "Craftkal",
+      href: "",
+      badges: [],
+      location: "Noida, India",
+      title: "UI/UX Designer",
+      logoUrl: `${basePath}/craftkal.png`,
+      start: "January 2022",
+      end: "April 2023",
+      description:
+        "Designed the complete UI/UX for Craftkal's mobile app as part of the UI/UX team, created all app pages, logo and user flows in Figma, along with Play Store screenshots.",
+    },
+    
   ],
   education: [
-    // {
-    //   school: "Buildspace",
-    //   href: "https://buildspace.so",
-    //   degree: "s3, s4, sf1, s5",
-    //   logoUrl: "/buildspace.jpg",
-    //   start: "2023",
-    //   end: "2024",
-    // },
-    // {
-    //   school: "University of Waterloo",
-    //   href: "https://uwaterloo.ca",
-    //   degree: "Bachelor's Degree of Computer Science (BCS)",
-    //   logoUrl: "/waterloo.png",
-    //   start: "2016",
-    //   end: "2021",
-    // },
-    // {
-    //   school: "Wilfrid Laurier University",
-    //   href: "https://wlu.ca",
-    //   degree: "Bachelor's Degree of Business Administration (BBA)",
-    //   logoUrl: "/laurier.png",
-    //   start: "2016",
-    //   end: "2021",
-    // },
-    // {
-    //   school: "International Baccalaureate",
-    //   href: "https://ibo.org",
-    //   degree: "IB Diploma",
-    //   logoUrl: "/ib.png",
-    //   start: "2012",
-    //   end: "2016",
-    // },
+    
   ],
   projects: [
     {
@@ -192,7 +136,7 @@ export const DATA = {
       href: 'https://keycorrect.com',
       dates: 'Jun 2023 - Present',
       active: true,
-      description: `it's a chrome extension that autocorrects your misspelled words when you hit space key, it has 5000+ users :)`,
+      description: `It's a browser extension that autocorrects your typos and makes your typing faster. It has 5000+ and i built it using Typescript, React.js, TailwindCSS, Levenshtein distance algorithm.`,
       technologies: ['Next.js', 'Typescript', 'PostgreSQL', 'TailwindCSS', 'Shadcn UI'],
       links: [
         // {
@@ -205,13 +149,29 @@ export const DATA = {
       video: '',
     },
     {
+      title: 'LeadLooking: AI Agent',
+      href: 'https://leadlooking.com',
+      dates: 'May 2024 - Jan 2025',
+      active: true,
+      description: `A fully autonomous AI agent that monitors Reddit 24/7 for high-intent leads and automatically emails business owners the leads it finds.`,
+      technologies: ['Next.js', 'React.js', 'Typescript', 'PostgreSQL', 'TailwindCSS', 'Shadcn UI'],
+      links: [
+        {
+          type: 'Source',
+          href: 'https://github.com/thishumanoid/leadlooking/tree/old-main-leadlooking',
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: `${basePath}/leadlooking-screenshot.png`,
+      video: '',
+    },
+    {
       title: 'FolderXD Workspace',
       href: 'https://folderxd.web.app',
       dates: 'January 2024 - April 2026',
       active: true,
-      description: `Folderxd is an extension that allows you to organize your
-Google Docs, Sheets, Slides, Keep, etc... into folders.`,
-      technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Shadcn UI', 'Supabase'],
+      description: `It's a browser extension that adds folder interface on google workspace apps like Google Docs, Sheets, etc... so that you can organize your docs in a better way`,
+      technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Shadcn UI', 'Postgres'],
       links: [
         // {
         //   type: 'Website',
@@ -230,25 +190,13 @@ Google Docs, Sheets, Slides, Keep, etc... into folders.`,
     {
       title: 'UI/UX Work',
       href: 'https://www.figma.com/design/f3EhJ4KOyMwYy3EfU38g5I/playstore-screnshots?node-id=0-1&t=rFN6tQXWCmiWqcXd-1',
-      dates: 'April 2023 - September 2023',
+      dates: 'Jan 2022 - April 2023',
       active: true,
       description:
-        'Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.',
-      technologies: [
-        'Figma',
-        'Lucid Icons',
-      ],
+        `Designed the complete UI/UX for Craftkal's mobile app as part of the UI/UX team, created all app pages, logo and user flows in Figma, along with Play Store screenshots.`,
+      technologies: ['Figma', 'Lucid Icons'],
       links: [
-        // {
-        //   type: 'Website',
-        //   href: 'https://llm.report',
-        //   icon: <Icons.globe className="size-3" />,
-        // },
-        // {
-        //   type: 'Source',
-        //   href: 'https://github.com/dillionverma/llm.report',
-        //   icon: <Icons.github className="size-3" />,
-        // },
+        
       ],
       image: `${basePath}/craftkal-screenshot.png`,
       video: '',
@@ -256,40 +204,26 @@ Google Docs, Sheets, Slides, Keep, etc... into folders.`,
     {
       title: 'Graphic Design',
       href: 'https://www.figma.com/design/7SexTDxPkWXowgc6ecmwrp/banner-design?node-id=0-1&t=7sCGo72EyM4e4JQv-1',
-      dates: 'April 2023 - March 2024',
+      dates: 'Dec 8, 2024',
       active: true,
       description:
-        'Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.',
-      technologies: [
-        'Figma',
-      ],
+        `Designed a minimal YouTube channel banner in Figma, blending clean layout with subtle brutalist design elements for a bold, distinctive look.`,
+      technologies: ['Figma', "Phosphor Icons"],
       links: [
-        {
-          type: 'Figma',
-          href: 'https://www.figma.com/design/7SexTDxPkWXowgc6ecmwrp/banner-design?node-id=0-1&t=7sCGo72EyM4e4JQv-1',
-          icon: <Icons.globe className="size-3" />,
-        },
       ],
       image: `${basePath}/yt-banner.png`,
       video: '',
     },
     {
       title: 'Thumbnail Designs',
-      href: 'https://www.figma.com/design/7SexTDxPkWXowgc6ecmwrp/banner-design?node-id=0-1&t=7sCGo72EyM4e4JQv-1',
+      href: 'https://himanart.github.io/p/',
       dates: 'April 2023 - March 2024',
       active: true,
       description:
-        'Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.',
-      technologies: [
-        'Figma',
-        'Photoshop',
-      ],
+        `Designed all video thumbnails for a YouTube channel with 100K+ subscribers in Figma and Photoshop that helped drive consistent viewer engagement.`,
+      technologies: ['Figma', 'Photoshop'],
       links: [
-        // {
-        //   type: 'Visit',
-        //   href: 'https://himanart.github.io/p/',
-        //   icon: <Icons.globe className="size-3" />,
-        // },
+       
       ],
       image: `${basePath}/thumbnails.png`,
       video: '',
