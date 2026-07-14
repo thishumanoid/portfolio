@@ -9,10 +9,11 @@ import { Postgresql } from '@/components/ui/svgs/postgresql';
 import { Javascript } from '@/components/ui/svgs/javascript';
 import { Figma } from '@/components/ui/svgs/figma';
 import { UiUx } from '@/components/ui/svgs/uiux';
+import { basePath } from '@/lib/basePath';
 
 export const DATA = {
   name: 'Himanshu Gupta',
-  initials: 'DV',
+  initials: 'HG',
   url: 'https://github.com/thishumanoid',
   location: 'Noida, India',
   locationLink: 'https://www.google.com/maps/place/noida',
@@ -20,7 +21,7 @@ export const DATA = {
     'Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.',
   summary:
     'At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).',
-  avatarUrl: '/me.png',
+  avatarUrl: `${basePath}/me.png`,
   skills: [
     { name: 'React', icon: ReactLight },
     { name: 'Next.js', icon: NextjsIconDark },
@@ -84,7 +85,7 @@ export const DATA = {
       badges: [],
       location: 'Remote',
       title: 'Founder & Developer',
-      logoUrl: '/keycorrect.png',
+      logoUrl: `${basePath}/keycorrect.png`,
       start: 'June 2023',
       end: 'Now',
       description:
@@ -96,7 +97,7 @@ export const DATA = {
       href: 'https://folderxd.web.app',
       location: 'Remote',
       title: 'Web Developer',
-      logoUrl: '/folderxd.png',
+      logoUrl: `${basePath}/folderxd.png`,
       start: 'January 2024',
       end: 'April 2026',
       description:
@@ -200,7 +201,7 @@ export const DATA = {
         //   icon: <Icons.globe className="size-3" />,
         // },
       ],
-      image: '/keycorrect-screenshot2.png',
+      image: `${basePath}/keycorrect-screenshot2.png`,
       video: '',
     },
     {
@@ -223,7 +224,7 @@ Google Docs, Sheets, Slides, Keep, etc... into folders.`,
         //   icon: <Icons.github className="size-3" />,
         // },
       ],
-      image: '/folderxd-screenshot.png',
+      image: `${basePath}/folderxd-screenshot.png`,
       video: '',
     },
     {
@@ -249,7 +250,7 @@ Google Docs, Sheets, Slides, Keep, etc... into folders.`,
         //   icon: <Icons.github className="size-3" />,
         // },
       ],
-      image: '/craftkal-screenshot.png',
+      image: `${basePath}/craftkal-screenshot.png`,
       video: '',
     },
     {
@@ -269,7 +270,7 @@ Google Docs, Sheets, Slides, Keep, etc... into folders.`,
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: '/yt-banner.png',
+      image: `${basePath}/yt-banner.png`,
       video: '',
     },
     {
@@ -290,7 +291,7 @@ Google Docs, Sheets, Slides, Keep, etc... into folders.`,
         //   icon: <Icons.globe className="size-3" />,
         // },
       ],
-      image: '/thumbnails.png',
+      image: `${basePath}/thumbnails.png`,
       video: '',
     },
   ],
