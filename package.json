@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "deploy": "gh-pages -d out",
+    "deploy": "gh-pages -d out --dotfiles",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
