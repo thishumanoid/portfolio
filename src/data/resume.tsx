@@ -19,7 +19,7 @@ export const DATA = {
   locationLink: 'https://www.google.com/maps/place/noida',
   description: 'I build software that users love',
   summary: `I'm a web developer & UI/UX designer with 3+ yrs of experience building software, from simple tools to advanced web apps. Currently growing [KeyCorrect](https://chromewebstore.google.com/detail/autocorrect-misspelled-wo/ppmhjnpgbdlpeoeboaldplmffgkijjji), a Chrome extension with 5000+ users.`,
-  avatarUrl: `${basePath}/me.png`,
+  avatarUrl: `${basePath}/me.webp`,
   skills: [
     { name: 'React', icon: ReactLight },
     { name: 'Next.js', icon: NextjsIconDark },
@@ -99,7 +99,7 @@ export const DATA = {
       start: 'May 2024',
       end: 'Jan 2025',
       description:
-        "An AI agent that finds high-intent leads from Reddit on autopilot. I also automated the entire blog generation process, visit the /blog page to see AI-generated, SEO-ready posts.",
+        "An AI agent that finds high-intent leads from Reddit on autopilot. I also automated the entire blog generation process, visit (leadlooking.com/blog) to see AI-generated, SEO-ready posts.",
     },
     {
       company: 'FolderXD',
