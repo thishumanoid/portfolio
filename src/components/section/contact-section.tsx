@@ -24,7 +24,7 @@ export default function ContactSection() {
           Get in Touch
         </h2>
         <p className="mx-auto max-w-lg text-muted-foreground text-balance">
-          Want to chat? Just shoot me an email at neuhiman@gmail.com or dm{" "}
+          Want to chat? Just shoot me an email at <strong>neuhiman@gmail.com</strong> or dm{" "}
           <Link
             href={DATA.contact.social.LinkedIn.url}
             target="_blank"

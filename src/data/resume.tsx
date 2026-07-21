@@ -84,8 +84,8 @@ export const DATA = {
       location: 'Remote',
       title: 'Founder & Developer',
       logoUrl: `${basePath}/keycorrect.png`,
-      start: 'June 2023',
-      end: 'Now',
+      start: 'Jun 2023',
+      end: 'Jul 2026',
       description:
         "It's a browser extension that autocorrects your typos and makes your typing faster. It has 5000+ users and i built it using Typescript, React.js, Levenshtein distance algorithm, The hardest part was to make it work on google docs",
     },
@@ -99,7 +99,7 @@ export const DATA = {
       start: 'May 2024',
       end: 'Jan 2025',
       description:
-        "An AI agent that finds high-intent leads from Reddit on autopilot. I also automated the entire blog generation process, visit (leadlooking.com/blog) to see AI-generated, SEO-ready posts.",
+        'An AI agent that finds high-intent leads from Reddit on autopilot. I also automated the entire blog generation process, visit (leadlooking.com/blog) to see AI-generated, SEO-ready posts.',
     },
     {
       company: 'FolderXD',
@@ -114,30 +114,27 @@ export const DATA = {
         "It's a browser extension that adds folder interface on google workspace apps like Google Docs, Sheets, Slides, etc... so that you can organize your docs in a better way",
     },
     {
-      company: "Craftkal",
-      href: "",
+      company: 'Craftkal',
+      href: '',
       badges: [],
-      location: "Noida, India",
-      title: "UI/UX Designer",
+      location: 'Noida, India',
+      title: 'UI/UX Designer',
       logoUrl: `${basePath}/craftkal.png`,
-      start: "January 2022",
-      end: "April 2023",
+      start: 'Jan 2022',
+      end: 'Apr 2023',
       description:
         "Designed the complete UI/UX for Craftkal's mobile app as part of the UI/UX team, created all app pages, logo and user flows in Figma, along with Play Store screenshots.",
     },
-    
   ],
-  education: [
-    
-  ],
+  education: [],
   projects: [
     {
       title: 'KeyCorrect: Autocorrect Extension',
       href: 'https://keycorrect.com',
-      dates: 'Jun 2023 - Present',
+      dates: 'Jun 2023 - Jul 2026',
       active: true,
-      description: `It's a browser extension that autocorrects your typos and makes your typing faster. It has 5000+ and i built it using Typescript, React.js, TailwindCSS, Levenshtein distance algorithm.`,
-      technologies: ['Next.js', 'Typescript', 'PostgreSQL', 'TailwindCSS', 'Shadcn UI'],
+      description: `- Chrome extension that autocorrects typos \n - Achieved **50ms** correction latency \n - Grew to **5,000+ users**, driving 60%+ of site traffic \n - Generated **$1,000+ revenue** with 22% avg weekly growth`,
+      technologies: ['Next.js', 'Typescript', 'PostgreSQL', 'TailwindCSS'],
       links: [
         // {
         //   type: 'Website',
@@ -150,10 +147,10 @@ export const DATA = {
     },
     {
       title: 'LeadLooking: AI Agent',
-      href: 'https://leadlooking.com',
+      href: 'https://github.com/thishumanoid/leadlooking/tree/old-main-leadlooking',
       dates: 'May 2024 - Jan 2025',
       active: true,
-      description: `A fully autonomous AI agent that monitors Reddit 24/7 for high-intent leads and automatically emails business owners the leads it finds.`,
+      description: `- Autonomous AI agent that scrapes Reddit for  leads \n - Uses **Groq AI** to analyze posts in real-time \n - Auto-published **28+ SEO** blog posts via Gemini API pipeline \n - Instant email alerts via **Mailtrap** SDK\n`,
       technologies: ['Next.js', 'React.js', 'Typescript', 'PostgreSQL', 'TailwindCSS', 'Shadcn UI'],
       links: [
         {
@@ -170,11 +167,9 @@ export const DATA = {
       href: 'https://folderxd.web.app',
       dates: 'January 2024 - April 2026',
       active: true,
-      description: `It's a browser extension that adds folder interface on google workspace apps like Google Docs, Sheets, etc... so that you can organize your docs in a better way`,
+      description: `- **VS Code-inspired** folder system on Docs \n - **Sublime**-like fuzzy search across all docs \n - Real-time cloud sync backed by **PostgreSQL** \n - Used **React Context** API for fast in-memory folder state`,
       technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Shadcn UI', 'Postgres'],
-      links: [
-        
-      ],
+      links: [],
       image: `${basePath}/folderxd-screenshot.png`,
       video: '',
     },
@@ -183,39 +178,31 @@ export const DATA = {
       href: 'https://www.figma.com/design/f3EhJ4KOyMwYy3EfU38g5I/playstore-screnshots?node-id=0-1&t=rFN6tQXWCmiWqcXd-1',
       dates: 'Jan 2022 - April 2023',
       active: true,
-      description:
-        `Designed the complete UI/UX for Craftkal's mobile app as part of the UI/UX team, created all app pages, logo and user flows in Figma, along with Play Store screenshots.`,
-      technologies: ['Figma', 'Lucid Icons'],
-      links: [
-        
-      ],
+      description: `- Designed complete **UI/UX** for Craftkal's mobile app in Figma \n - Created all app screens, user flows, and the **logo** \n - Designed **Play Store** screenshots for app listing \n - Worked as part of a dedicated UI/UX team`,
+      technologies: ['Figma', 'Lucid Icons', 'Flutter'],
+      links: [],
       image: `${basePath}/craftkal-screenshot.png`,
       video: '',
     },
     {
-      title: 'Graphic Design',
+      title: 'Graphic Design Work',
       href: 'https://www.figma.com/design/7SexTDxPkWXowgc6ecmwrp/banner-design?node-id=0-1&t=7sCGo72EyM4e4JQv-1',
       dates: 'Dec 8, 2024',
       active: true,
-      description:
-        `Designed a minimal YouTube channel banner in Figma, blending clean layout with subtle brutalist design elements for a bold, distinctive look.`,
-      technologies: ['Figma', "Phosphor Icons"],
-      links: [
-      ],
+      description: `Designed a minimal YouTube channel banner in **Figma**, blending clean layout with subtle brutalist design elements for a bold, distinctive look.`,
+      technologies: ['Figma', 'Phosphor Icons', 'Midjourney AI'],
+      links: [],
       image: `${basePath}/yt-banner.png`,
       video: '',
     },
     {
-      title: 'Thumbnail Designs',
+      title: 'YouTube Channel (200K Subs)',
       href: 'https://himanart.github.io/p/',
       dates: 'April 2023 - March 2024',
       active: true,
-      description:
-        `Designed all video thumbnails for a YouTube channel with 100K+ subscribers in Figma and Photoshop that helped drive consistent viewer engagement.`,
+      description: `- Grew channel from **0 to 200K+** subscribers in 15 months \n - Multiple Shorts crossed **[20M+ views](https://www.youtube.com/shorts/TN-NWRZVKAY)** each \n - Made **$1100+** in revenue \n - Learned Hooks, Pacing, Storytelling`,
       technologies: ['Figma', 'Photoshop'],
-      links: [
-       
-      ],
+      links: [],
       image: `${basePath}/thumbnails.png`,
       video: '',
     },
