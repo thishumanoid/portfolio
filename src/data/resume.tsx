@@ -18,7 +18,7 @@ export const DATA = {
   location: 'Noida, India',
   locationLink: 'https://www.google.com/maps/place/noida',
   description: 'I build software that users love',
-  summary: `I'm a web developer & UI/UX designer with 3+ yrs of experience building software, from simple tools to advanced web apps. Currently growing [KeyCorrect](https://chromewebstore.google.com/detail/autocorrect-misspelled-wo/ppmhjnpgbdlpeoeboaldplmffgkijjji), a Chrome extension with 5000+ users.`,
+  summary: `I'm a web developer & graphic designer with 3+ years of experience shipping software and visual content. Grew a [YouTube channel](https://www.youtube.com/@LogicalHimanshu/shorts) to 200K subscribers (20M+ views on some shorts) and currently growing [KeyCorrect](https://chromewebstore.google.com/detail/autocorrect-misspelled-wo/ppmhjnpgbdlpeoeboaldplmffgkijjji), a Chrome extension with 3,000+ users`,
   avatarUrl: `${basePath}/me.webp`,
   skills: [
     { name: 'React', icon: ReactLight },
@@ -153,11 +153,11 @@ export const DATA = {
       description: `- Autonomous AI agent that scrapes Reddit for  leads \n - Uses **Groq AI** to analyze posts in real-time \n - Auto-published **28+ SEO** blog posts via Gemini API pipeline \n - Instant email alerts via **Mailtrap** SDK\n`,
       technologies: ['Next.js', 'React.js', 'Typescript', 'PostgreSQL', 'TailwindCSS', 'Shadcn UI'],
       links: [
-        {
-          type: 'Source',
-          href: 'https://github.com/thishumanoid/leadlooking/tree/old-main-leadlooking',
-          icon: <Icons.github className="size-3" />,
-        },
+        // {
+        //   type: 'Source',
+        //   href: 'https://github.com/thishumanoid/leadlooking/tree/old-main-leadlooking',
+        //   icon: <Icons.github className="size-3" />,
+        // },
       ],
       image: `${basePath}/leadlooking-screenshot.png`,
       video: '',
