@@ -186,7 +186,7 @@ export const DATA = {
     },
     {
       title: 'UI/UX Work',
-      href: '',
+      href: 'https://www.figma.com/design/7SexTDxPkWXowgc6ecmwrp/banner-design?node-id=0-1&t=7sCGo72EyM4e4JQv-1',
       dates: 'Jan 2022 - Apr 2023',
       active: true,
       description: `- Designed complete **UI/UX** for Craftkal's mobile app in Figma \n - Created all app screens, user flows, and the **logo** \n - Designed **Play Store** screenshots for app listing \n - Worked as part of a dedicated UI/UX team`,
