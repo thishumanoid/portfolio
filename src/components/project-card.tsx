@@ -1,27 +1,52 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
+'use client';
 
-import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
-import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
-import Markdown from "react-markdown";
+import { Badge } from '@/components/ui/badge';
+import { cn } from '@/lib/utils';
+import { ArrowUpRight, Expand } from 'lucide-react';
+import Link from 'next/link';
+import { useState } from 'react';
+import Markdown from 'react-markdown';
+import {
+  Dialog,
+  DialogContent,
+} from '@/components/ui/dialog';
 
 function ProjectImage({ src, alt }: { src: string; alt: string }) {
   const [imageError, setImageError] = useState(false);
+  const [isImgDialog, setIsImgDialog] = useState(false);
 
   if (!src || imageError) {
     return <div className="w-full h-48 bg-muted" />;
   }
 
   return (
-    <img
-      src={src}
-      alt={alt}
-      className="w-full h-48 object-cover"
-      onError={() => setImageError(true)}
-    />
+    <>
+      {isImgDialog && (
+        <Dialog open={isImgDialog} onOpenChange={setIsImgDialog}>
+          <DialogContent className="max-w-fit lg:max-w-4xl overflow-y-auto  p-0.5 sm:max-w-2xl">
+            <img
+              src={src}
+              alt={alt}
+              className="w-full h-full rounded-lg"
+              onError={() => setImageError(true)}
+            />
+          </DialogContent>
+        </Dialog>
+      )}
+      <div className="relative z-0">
+        {/* <div onClick={() => setIsImgDialog(true)} className="absolute right-1.5 top-1.5 rounded-xs">
+          <Expand size={20} className="p-0.5 text-black/50" />
+        </div> */}
+        <img
+          onClick={() => setIsImgDialog(true)}
+          src={src}
+          alt={alt}
+          className="w-full h-48 object-cover"
+          onError={() => setImageError(true)}
+        />
+      </div>
+    </>
   );
 }
 
@@ -57,32 +82,20 @@ export function ProjectCard({
   return (
     <div
       className={cn(
-        "flex flex-col h-full border border-border rounded-xl overflow-hidden hover:ring-2 cursor-pointer hover:ring-muted transition-all duration-200",
-        className
+        'flex flex-col h-full border border-border rounded-xl overflow-hidden hover:ring-2 cursor-pointer hover:ring-muted transition-all duration-200',
+        className,
       )}
     >
       <div className="relative shrink-0">
-        <Link
-          href={href || "#"}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block"
-        >
-          {video ? (
-            <video
-              src={video}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-48 object-cover"
-            />
-          ) : image ? (
-            <ProjectImage src={image} alt={title} />
-          ) : (
-            <div className="w-full h-48 bg-muted" />
-          )}
-        </Link>
+        {/* <Link href={href || '#'} target="_blank" rel="noopener noreferrer" className="block"> */}
+        {video ? (
+          <video src={video} autoPlay loop muted playsInline className="w-full h-48 object-cover" />
+        ) : image ? (
+          <ProjectImage src={image} alt={title} />
+        ) : (
+          <div className="w-full h-48 bg-muted" />
+        )}
+        {/* </Link> */}
         {links && links.length > 0 && (
           <div className="absolute top-2 right-2 flex flex-wrap gap-2">
             {links.map((link, idx) => (
@@ -112,7 +125,7 @@ export function ProjectCard({
             <time className="text-xs text-muted-foreground">{dates}</time>
           </div>
           <Link
-            href={href || "#"}
+            href={href || '#'}
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
