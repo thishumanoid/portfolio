@@ -19,7 +19,7 @@ export const DATA = {
   locationLink: 'https://www.google.com/maps/place/noida',
   description: 'I create visuals & software that users love',
   summary: `I'm a web developer & graphic designer with 3+ years of experience shipping software and visual content. Grew a [YouTube channel](https://www.youtube.com/@LogicalHimanshu/shorts) to 200K subscribers (20M+ views on some shorts) and currently growing [KeyCorrect](https://chromewebstore.google.com/detail/autocorrect-misspelled-wo/ppmhjnpgbdlpeoeboaldplmffgkijjji), a Chrome extension with 3,000+ users`,
-  avatarUrl: `${basePath}/me.png`,
+  avatarUrl: `${basePath}/me.webp`,
   skills: [
     { name: 'React', icon: ReactLight },
     { name: 'Next.js', icon: NextjsIconDark },
