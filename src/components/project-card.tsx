@@ -19,18 +19,16 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
 
   return (
     <>
-      {isImgDialog && (
-        <Dialog open={isImgDialog} onOpenChange={setIsImgDialog}>
-          <DialogContent className="max-w-fit lg:max-w-4xl overflow-y-auto  p-0.5 sm:max-w-2xl">
-            <img
-              src={src}
-              alt={alt}
-              className="w-full h-full rounded-lg"
-              onError={() => setImageError(true)}
-            />
-          </DialogContent>
-        </Dialog>
-      )}
+      <Dialog open={isImgDialog} onOpenChange={setIsImgDialog}>
+        <DialogContent className="w-screen lg:max-w-4xl overflow-y-auto p-0.5 rounded-lg">
+          <img
+            src={src}
+            alt={alt}
+            className="w-full rounded-lg"
+            onError={() => setImageError(true)}
+          />
+        </DialogContent>
+      </Dialog>
       <div className="relative z-0">
         {/* <div onClick={() => setIsImgDialog(true)} className="absolute right-1.5 top-1.5 rounded-xs">
           <Expand size={20} className="p-0.5 text-black/50" />
